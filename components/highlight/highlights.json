@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_highlight_highlights",
+  "info": {
+    "name": "highlights",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "highlight": {
+      "type": "text"
+    }
+  }
+}

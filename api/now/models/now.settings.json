@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nows",
+  "info": {
+    "name": "Now"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nowDescription": {
+      "type": "text"
+    },
+    "workingDescription": {
+      "type": "text"
+    },
+    "nows": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "userNow"
+    }
+  }
+}

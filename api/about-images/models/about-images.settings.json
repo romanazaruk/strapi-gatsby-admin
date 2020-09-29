@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_images",
+  "info": {
+    "name": "AboutImages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Images": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user"
+    }
+  }
+}

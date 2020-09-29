@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/books-tops",
+      "handler": "books-top.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/books-tops/count",
+      "handler": "books-top.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/books-tops/:id",
+      "handler": "books-top.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/books-tops",
+      "handler": "books-top.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/books-tops/:id",
+      "handler": "books-top.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/books-tops/:id",
+      "handler": "books-top.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

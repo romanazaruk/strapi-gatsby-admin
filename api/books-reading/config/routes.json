@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/books-readings",
+      "handler": "books-reading.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/books-readings/count",
+      "handler": "books-reading.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/books-readings/:id",
+      "handler": "books-reading.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/books-readings",
+      "handler": "books-reading.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/books-readings/:id",
+      "handler": "books-reading.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/books-readings/:id",
+      "handler": "books-reading.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

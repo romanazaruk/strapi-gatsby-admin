@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books_reads",
+  "info": {
+    "name": "BooksRead"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "book": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": false,
+      "component": "highlight.highlights"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "label": {
+      "type": "string"
+    },
+    "labelColor": {
+      "type": "string"
+    },
+    "labelTime": {
+      "type": "time"
+    },
+    "blog": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "authors"
+    }
+  }
+}

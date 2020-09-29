@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "now_readings",
+  "info": {
+    "name": "NowReading"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reading": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "userReading"
+    },
+    "number": {
+      "type": "string"
+    }
+  }
+}
